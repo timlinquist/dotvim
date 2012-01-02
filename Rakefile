@@ -19,7 +19,7 @@ namespace :update do
     :rails               => "git://github.com/tpope/vim-rails.git",
     :ruby_refactoring    => "git://github.com/ecomba/vim-ruby-refactoring.git",
     :snipmate            => "git://github.com/msanders/snipmate.vim.git",
-    :snipmate_snippets   => "git://github.com/amerine/snipmate-snippets.git",
+    :snipmate_snippets   => "git://github.com/scrooloose/snipmate-snippets.git",
     :specky              => "git://github.com/vim-scripts/Specky.git",
     :surround            => "git://github.com/tpope/vim-surround.git",
     :tabular             => "git://github.com/godlygeek/tabular",
