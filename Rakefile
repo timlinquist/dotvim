@@ -28,6 +28,7 @@ namespace :update do
     :textobj_rubyblock   => "git://github.com/nelstrom/vim-textobj-rubyblock.git",
     :vim_commentary      => "git://github.com/tpope/vim-commentary.git",
     :vim_rvm             => "git://github.com/tpope/vim-rvm.git",
+    :handlebars          => "git://github.com/nono/vim-handlebars.git",
 
     # syntax definitions
     :syntax_git          => "git://github.com/tpope/vim-git.git",
