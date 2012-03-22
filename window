@@ -8,17 +8,39 @@ set winminheight=0 " allow windows to be 0 lines tall
 set winminwidth=0  " allow windows to be 0 lines wide
 set laststatus=2   " always show statusline
 
-" set up statusline, ends up looking like this:
-"   [1] window.vimrc [Preview] [vim,+]            @ L22 C51 (66%)(14)
-set statusline=
-set statusline+=%n:\                        " buffer number
-set statusline+=%{fugitive#statusline()}\   " show git branch
-set statusline+=%f                          " filename
-set statusline+=%<                          " truncate here if necessary
-set statusline+=%10w                        " displays [Preview] if it is
-set statusline+=\ [                         " fix spacing, open bracket
-set statusline+=%{strlen(&ft)?&ft:'none'}   " filetype
-set statusline+=%M                          " + if modified, - if r/o
-set statusline+=]                           " close bracket
-set statusline+=%=                          " right-align remainder
-set statusline+=@\ L%l\ C%c\ (%P)(%L)\      " position in file and number of lines
+let stl = "%<"
+
+" buffer number
+let stl .= "%n: "
+
+" truncated filename
+let stl .= "%-.60f "
+
+let stl .= "%{&filetype} "
+
+" is preview window
+let stl .= "%10w"
+
+" git status
+let stl .= "%{fugitive#statusline()} "
+
+" set highlight to ErrorMsg for yelling
+let stl .= "%="
+let stl .= "%#ErrorMsg#"
+
+" yell at me if dirty
+let stl .= "%{&modified > 0 ? '-dirty-' : ''}"
+let stl .= "%{&modified == 1 && &modifiable == 0 ? ' ' : ''}"
+
+" yell at me if readonly
+let stl .= "%{&modifiable == 0 ? 'readonly' : ''}"
+
+" reset highlight
+let stl .= "%*"
+
+" column:line/max
+let stl .= " %c:"
+let stl .= "%l/%L %P"
+
+set statusline=%!stl
+
