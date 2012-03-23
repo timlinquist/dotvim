@@ -7,7 +7,7 @@ autocmd FileType ruby,rdoc,cucumber,yaml,html,eruby,handlebars set softtabstop=2
 autocmd BufNewFile,BufRead Gemfile     setfiletype ruby
 autocmd BufNewFile,BufRead config.ru   setfiletype ruby
 autocmd BufNewFile,BufRead *.jst       setfiletype eruby.html
-autocmd BufNewFile, BufRead *.handlebars setfiletype handlebars
+autocmd BufNewFile,BufRead *.handlebars setfiletype handlebars
 
 " markdown files
 autocmd BufRead,BufNewFile *.mkd,*.markdown,*.md,*.mdown,*.mkdn set softtabstop=4 shiftwidth=4 tabstop=4
