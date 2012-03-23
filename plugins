@@ -15,9 +15,6 @@ map <leader>cc <plug>NERDCommenterToggle
 map <leader>cC <plug>NERDCommenterSexy
 map <leader>cu <plug>NERDCommenterUncomment
 
-"NERDTree
-map <leader>d :NERDTreeToggle<cr>
-
 "Tabular
 " sets ,a to align = and => lines
 map <leader>a :Tabularize /=>\?<cr>
