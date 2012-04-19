@@ -28,6 +28,7 @@ namespace :update do
     :vim_commentary      => "git://github.com/tpope/vim-commentary.git",
     :vim_rvm             => "git://github.com/tpope/vim-rvm.git",
     :handlebars          => "git://github.com/nono/vim-handlebars.git",
+    :vim_eunuch          => "https://github.com/tpope/vim-eunuch.git",
 
     # syntax definitions
     :syntax_git          => "git://github.com/tpope/vim-git.git",
