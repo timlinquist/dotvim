@@ -11,7 +11,6 @@ namespace :update do
   BUNDLES = {
     # plugins
     :ack                 => "git://github.com/mileszs/ack.vim.git",
-    :bufexplorer         => "git://github.com/vim-scripts/bufexplorer.zip.git",
     :fugitive            => "git://github.com/tpope/vim-fugitive.git",
     :nerdcommenter       => "git://github.com/scrooloose/nerdcommenter.git",
     :ragtag              => "git://github.com/tpope/vim-ragtag.git",
@@ -19,7 +18,6 @@ namespace :update do
     :ruby_refactoring    => "git://github.com/ecomba/vim-ruby-refactoring.git",
     :snipmate            => "git://github.com/msanders/snipmate.vim.git",
     :snipmate_snippets   => "git://github.com/scrooloose/snipmate-snippets.git",
-    :specky              => "git://github.com/vim-scripts/Specky.git",
     :surround            => "git://github.com/tpope/vim-surround.git",
     :tabular             => "git://github.com/godlygeek/tabular",
     :taglist             => "git://github.com/vim-scripts/taglist.vim.git",
