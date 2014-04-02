@@ -2,6 +2,9 @@
 " use filetype plugins to determine indent settings
 filetype plugin indent on
 
+" Python settings
+autocmd FileType python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4
+
 " ruby and yaml indentation
 autocmd FileType ruby,rdoc,cucumber,yaml,html,eruby,handlebars set softtabstop=2 shiftwidth=2 tabstop=2
 autocmd BufNewFile,BufRead Gemfile     setfiletype ruby
