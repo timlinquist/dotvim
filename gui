@@ -1,5 +1,5 @@
 "GUI OPTIONS
-colorscheme mustang
+colorscheme Vividchalk
 set mouse=a
 set guifont=Monaco:h14 " Inconsolata, 16pt high
 
