@@ -43,6 +43,9 @@ nmap <D-r> :!ruby %<CR>
 " retab the document (tabs to spaces)
 nmap <silent> <leader><S-t> :retab!<CR>
 
+",r to check Ruby syntax on current buffer
+map <silent> <Leader>r :!ruby -c %:p<CR>
+
 " globbed file opening
 nmap <leader>g :e **/
 cmap <leader>g **/
