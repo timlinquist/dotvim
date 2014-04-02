@@ -9,6 +9,9 @@ autocmd FileType python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4
 autocmd FileType ruby,rdoc,cucumber,yaml,html,eruby,handlebars set softtabstop=2 shiftwidth=2 tabstop=2
 autocmd BufNewFile,BufRead Gemfile     setfiletype ruby
 autocmd BufNewFile,BufRead config.ru   setfiletype ruby
+autocmd BufNewFile,BufRead *.thor      setfiletype ruby
+
+" Templating languages
 autocmd BufNewFile,BufRead *.jst       setfiletype eruby.html
 autocmd BufNewFile,BufRead *.handlebars setfiletype handlebars
 
@@ -26,3 +29,4 @@ function! s:SetupSnippets()
   call ExtractSnips("~/.vim/snippets/html", "xhtml")
   call ExtractSnips("~/.vim/snippets/html", "php")
 endfunction
+
