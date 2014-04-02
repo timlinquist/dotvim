@@ -10,32 +10,30 @@ namespace :update do
 
   BUNDLES = {
     # plugins
-    :ack                 => "git://github.com/mileszs/ack.vim.git",
-    :fugitive            => "git://github.com/tpope/vim-fugitive.git",
-    :nerdcommenter       => "git://github.com/scrooloose/nerdcommenter.git",
-    :ragtag              => "git://github.com/tpope/vim-ragtag.git",
-    :rails               => "git://github.com/tpope/vim-rails.git",
-    :ruby_refactoring    => "git://github.com/ecomba/vim-ruby-refactoring.git",
-    :snipmate            => "git://github.com/msanders/snipmate.vim.git",
-    :snipmate_snippets   => "git://github.com/scrooloose/snipmate-snippets.git",
-    :surround            => "git://github.com/tpope/vim-surround.git",
-    :tabular             => "git://github.com/godlygeek/tabular",
-    :taglist             => "git://github.com/vim-scripts/taglist.vim.git",
-    :textobj_user        => "git://github.com/kana/vim-textobj-user.git",
-    :textobj_rubyblock   => "git://github.com/nelstrom/vim-textobj-rubyblock.git",
-    :vim_commentary      => "git://github.com/tpope/vim-commentary.git",
-    :vim_rvm             => "git://github.com/tpope/vim-rvm.git",
-    :handlebars          => "git://github.com/nono/vim-handlebars.git",
-    :vim_eunuch          => "https://github.com/tpope/vim-eunuch.git",
+    :ack                      => "git://github.com/mileszs/ack.vim.git",
+    :fugitive                 => "git://github.com/tpope/vim-fugitive.git",
+    :nerdcommenter            => "git://github.com/scrooloose/nerdcommenter.git",
+    :ragtag                   => "git://github.com/tpope/vim-ragtag.git",
+    :rails                    => "git://github.com/tpope/vim-rails.git",
+    :ruby_refactoring         => "git://github.com/ecomba/vim-ruby-refactoring.git",
+    :snipmate                 => "git://github.com/msanders/snipmate.vim.git",
+    :snipmate_snippets        => "git://github.com/scrooloose/snipmate-snippets.git",
+    :surround                 => "git://github.com/tpope/vim-surround.git",
+    :tabular                  => "git://github.com/godlygeek/tabular",
+    :taglist                  => "git://github.com/vim-scripts/taglist.vim.git",
+    :textobj_user             => "git://github.com/kana/vim-textobj-user.git",
+    :textobj_rubyblock        => "git://github.com/nelstrom/vim-textobj-rubyblock.git",
+    :vim_commentary           => "git://github.com/tpope/vim-commentary.git",
+    :vim_eunuch               => "https://github.com/tpope/vim-eunuch.git",
 
     # syntax definitions
-    :syntax_git          => "git://github.com/tpope/vim-git.git",
-    :syntax_haml         => "git://github.com/tpope/vim-haml.git",
-    :syntax_html5        => "git://github.com/othree/html5-syntax.vim.git",
-    :syntax_json         => "git://github.com/leshill/vim-json.git",
-    :syntax_markdown     => "git://github.com/ujihisa/vim-markdown.git",
-    :syntax_rdoc         => "git://github.com/depuracao/vim-rdoc.git",
-    :syntax_textile      => "git://github.com/timcharper/textile.vim.git"
+    :syntax_git               => "git://github.com/tpope/vim-git.git",
+    :syntax_haml              => "git://github.com/tpope/vim-haml.git",
+    :syntax_html5             => "git://github.com/othree/html5-syntax.vim.git",
+    :syntax_json              => "git://github.com/leshill/vim-json.git",
+    :syntax_markdown          => "git://github.com/ujihisa/vim-markdown.git",
+    :syntax_rdoc              => "git://github.com/depuracao/vim-rdoc.git",
+    :syntax_textile           => "git://github.com/timcharper/textile.vim.git"
   }
 
   desc "update any bundles defined in the Rakefile"
