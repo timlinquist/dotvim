@@ -1,8 +1,44 @@
-" Load plugins via pathogen
-call pathogen#runtime_append_all_bundles()
-
-"BASIC OPTIONS
 set nocompatible
+filetype off
+
+" Vundler setup
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
+
+Bundle 'mileszs/ack.vim'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'ecomba/vim-ruby-refactoring'
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+Bundle "garbas/vim-snipmate"
+Bundle "honza/vim-snippets"
+Bundle 'godlygeek/tabular'
+Bundle 'vim-scripts/taglist.vim'
+Bundle 'kana/vim-textobj-user'
+Bundle 'nelstrom/vim-textobj-rubyblock'
+Bundle 'bps/vim-textobj-python'
+Bundle 'nono/vim-handlebars'
+
+" Tpope - The master
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-ragtag'
+Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-commentary'
+Bundle 'tpope/vim-eunuch'
+Bundle 'tpope/vim-git'
+
+" Syntax
+Bundle 'othree/html5-syntax.vim'
+Bundle 'leshill/vim-json'
+Bundle 'ujihisa/vim-markdown.git'
+Bundle 'depuracao/vim-rdoc'
+
+" BASIC OPTIONS
 set wildmenu
 set wildignore+=*.png,*.jpg,*.gif,*.ai,*.jpeg,*.psd,*.swp,*.jar,*.zip,*.gem,.DS_Store,log/**,tmp/**,coverage/**,rdoc/**
 set list
@@ -166,14 +202,6 @@ autocmd BufRead,BufNewFile *.mkd,*.markdown,*.md,*.mdown,*.mkdn set noexpandtab
 
 " set filetype on config files
 autocmd BufNewFile,BufRead ~/.vim/*  setfiletype vim
-
-" set the snippets for rails/ruby projects
-autocmd vimenter * call s:SetupSnippets()
-function! s:SetupSnippets()
-  call ExtractSnips("~/.vim/snippets/html", "eruby")
-  call ExtractSnips("~/.vim/snippets/html", "xhtml")
-  call ExtractSnips("~/.vim/snippets/html", "php")
-endfunction
 
 "GUI OPTIONS
 if has("gui_running")

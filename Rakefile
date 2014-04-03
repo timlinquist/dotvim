@@ -29,7 +29,6 @@ namespace :update do
 
     # syntax definitions
     :syntax_git               => "git://github.com/tpope/vim-git.git",
-    :syntax_haml              => "git://github.com/tpope/vim-haml.git",
     :syntax_html5             => "git://github.com/othree/html5-syntax.vim.git",
     :syntax_json              => "git://github.com/leshill/vim-json.git",
     :syntax_markdown          => "git://github.com/ujihisa/vim-markdown.git",
