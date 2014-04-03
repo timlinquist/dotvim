@@ -18,7 +18,7 @@ Bundle "garbas/vim-snipmate"
 Bundle "honza/vim-snippets"
 Bundle 'godlygeek/tabular'
 Bundle 'vim-scripts/taglist.vim'
-Bundle 'kana/vim-textobj-user.vim.git'
+Bundle 'kana/vim-textobj-user'
 Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'bps/vim-textobj-python'
 Bundle 'nono/vim-handlebars'
