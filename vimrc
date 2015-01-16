@@ -65,6 +65,9 @@ nmap <silent> <leader><S-t> :retab!<CR>
 ",r to check Ruby syntax on current buffer
 map <silent> <Leader>r :!ruby -c %:p<CR>
 
+",rcop to check Rubocop style rules"
+map <silent> <Leader>rcop :!bundle exec rubocop %:p<CR>
+
 " globbed file opening
 nmap <leader>g :e **/
 cmap <leader>g **/
