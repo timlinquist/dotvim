@@ -3,8 +3,9 @@ Getting Started
 
 * git clone git@github.com:timlinquist/dotvim.git ~/.vim
 * cat "source ~/.vim/vimrc" > ~/.vimrc
+* git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 * open vim or MacVim
-* :BundleInstall
+* :PluginInstall
 
 Contributing
 ------------
