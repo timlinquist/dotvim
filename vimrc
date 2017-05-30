@@ -90,6 +90,9 @@ let NERDMenuMode=0              " disable menu
 let NERDSpaceDelims=1           " place spaces after comment chars
 let NERDDefaultNesting=0        " don't recomment commented lines
 
+"silver searcher integration https://github.com/ggreer/the_silver_searcher#editor-integration
+let g:ackprg='ag --vimgrep'
+
 map <leader>cc <plug>NERDCommenterToggle
 map <leader>cC <plug>NERDCommenterSexy
 map <leader>cu <plug>NERDCommenterUncomment
