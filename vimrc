@@ -26,6 +26,7 @@ Plugin 'nono/vim-handlebars'
 
 " Tpope - The master
 Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-rhubarb'
 Plugin 'tpope/vim-ragtag'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-surround'
