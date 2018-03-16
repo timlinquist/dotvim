@@ -10,6 +10,7 @@ call vundle#begin()
 " required! 
 Plugin 'gmarik/vundle'
 
+Plugin 'yaml'
 Plugin 'mileszs/ack.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'ecomba/vim-ruby-refactoring'
